@@ -1,35 +1,40 @@
 ---
-title: Markdown Mystery Tour
+title: Proyecto UPSO
 publishDate: 2020-03-02 00:00:00
 img: /assets/stock-1.jpg
 img_alt: Iridescent ripples of a bright blue and pink liquid
 description: |
-  We designed a whodunnit-style game to introduce Markdown formatting. Suspense — suspicion — syntax!
+  La respuesta a un problema que permite a los estudiantes optimizar su carga académica de manera rápida y sencilla en un proyecto colaborativo y de código abierto.
 tags:
   - Design
   - Dev
-  - User Testing
+  - UX/UI
 ---
 
-## Level-two heading
+## Sudotec: Una Herramienta Personalizada para Estudiantes de la UPSO
 
 > Tell me and I forget. Teach me and I remember. Involve me and I learn.
 
-Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
+Bienvenidos al Proyecto UPSO, una aplicación web diseñada específicamente para los estudiantes de la carrera de Tecnologías de Programación de la Universidad Provincial del Sudoeste (UPSO). Esta herramienta es la respuesta a un problema organizacional que permite a los estudiantes tener un seguimiento de los cursos, tareas, entregas, proyectos y exámenes finales, más optimizada a sus necesidades.
 
-Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel quam elementum pulvinar etiam non.
+Con una interfaz de usuario pensada para la carrera, los estudiantes pueden organizar y optimizar su carga académica de manera rápida y sencilla. El Proyecto UPSO es un proyecto colaborativo y de código abierto, lo que significa que está en constante desarrollo y mejora gracias a la contribución de la comunidad de estudiantes.
 
-### Level-three heading
+### ¿Cómo funciona?
 
-Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl pretium fusce.
+El proyecto se basaba inicialmente en una tabla de horarios personalizada y adaptada para los estudiantes de la TUTP* UPSO, con funcionalidades de accesibilidad directa las clases online en sus dias y horarios. Pero no se detiene ahí y finalmente se convierte en una plataforma mas compleja con diferentes funcionalidades para hacer la cursada de los alumnos mas sencilla, incroporando una seccion de materias con sus respectivas tareas y entregas.
 
-### Level-three heading
+Por otro lado también están en desarrollo una sección para poder ver las clases grabadas y una sección de presentación donde los laumnos participantes puedan dejar sus datos personales y contacto.
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
+### El futuro de Proyecto Upso
 
-Aenean pretium purus augue, ut bibendum erat convallis quis. Cras condimentum quis velit ac mollis. Suspendisse non purus fringilla, venenatis nisl porta, finibus odio. Curabitur aliquet metus faucibus libero interdum euismod. Morbi sed magna nisl. Morbi odio nibh, facilisis vel sapien eu, tempus tincidunt erat. Nullam erat velit, sagittis at purus quis, tristique scelerisque tortor. Pellentesque lacinia tortor id est aliquam viverra. Vestibulum et diam ac ipsum mollis fringilla.
+Esta idea fue pensada esencialemte para ser un proyecto a largo plazo en el que todos puedan participar y aportar 
+talento. Es un proyecto con el potencial para convertirse en una aplicación web mucho más compleja y útil a medida que se incorporen más personas, ideas, recursos y habilidades.
 
-#### Level-four heading
+Imaginamos un futuro en el que ProyectoUPSO se convierta en una plataforma para que la UPSO cargue sus propios videos de clases virtuales y funcionalidades para las materias que así lo requieran. Esto daría lugar a una organización más efectiva y una accesibilidad mucho más apropiada para los alumnos que la utilicen.
 
-- We noted this
-- And also this other point
+#### Participa en el proyecto
+
+- ¿Sos estudiante de la UPSO y quieres contribuir al proyecto? Aca tenes un [mini tutorial](https://docs.google.com/document/d/1wt4_zKksf4c75TeDGufU3Tz2oBebgVwWhnay7TsPJfg/edit?usp=sharing) para empezar.
+- ¿Queres ver el proyecto en acción? Accede a través de este [link](https://horariosupso.netlify.app/).
+
+*Tecnicatura Universitaria en Tecnologías de la Programación.

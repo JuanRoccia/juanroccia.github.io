@@ -1,22 +1,56 @@
 ---
-title: Chatbot AI App
+title: AudioGPT
 publishDate: 2020-03-04 00:00:00
 img: /assets/stock-3.jpg
 img_alt: Pearls of silky soft white cotton, bubble up under vibrant lighting
 description: |
-  We developed a virtual showcase for the softest bedding imaginable.
+  Aplicación de Inteligencia Artificial del tipo Chatbot Conversacional.
 tags:
-  - Design
-  - Dev
-  - Branding
+  - Chatbot
+  - AI
+  - Text Generation
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere commodo venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam non ligula vel metus efficitur hendrerit. In hac habitasse platea dictumst. Praesent et mauris ut mi dapibus semper. Curabitur tortor justo, efficitur sit amet pretium cursus, porta eget odio. Cras ac venenatis dolor. Donec laoreet posuere malesuada. Curabitur nec mi tempor, placerat leo sit amet, tincidunt est. Quisque pellentesque venenatis magna, eget tristique nibh pulvinar in. Vestibulum vitae volutpat arcu. Aenean ut malesuada odio, sit amet pellentesque odio. Suspendisse nunc elit, blandit nec hendrerit non, aliquet at magna. Donec id leo ut nulla sagittis sodales.
+# AudioGPT
 
-Integer vitae nibh elit. Suspendisse eget urna eu neque bibendum pharetra. Sed interdum lectus sem, in pulvinar magna dignissim vel. Quisque maximus at urna nec laoreet. Suspendisse potenti. Vestibulum rhoncus sem ut mi pellentesque, in vestibulum erat blandit. Aliquam sodales dui ac maximus consectetur. Duis quis est vehicula, imperdiet nisl nec, fermentum erat. Duis tortor diam, pharetra eu euismod in, vehicula non eros. Curabitur facilisis dui at erat ultrices gravida. In at nunc ultricies, pulvinar mi vel, sagittis mauris. Praesent pharetra posuere purus ac imperdiet. Nulla facilisi.
+AudioGPT es una aplicación web que permite a los usuarios interactuar con un modelo de IA conversacional al estilo de GPT, pero utilizando modelos de GPT4All y todo enfocado al audio.
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
+## Estructura del Proyecto
 
-Mauris sed eros in ex maximus volutpat. Suspendisse potenti. Donec lacinia justo consectetur sagittis tempor. Proin ullamcorper nisi vitae auctor rhoncus. Sed tristique aliquam augue. Pellentesque vitae fringilla ligula. Nulla arcu elit, efficitur eu nunc malesuada, eleifend tincidunt orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer mattis orci in bibendum ultricies. Quisque a dui erat. Phasellus et vulputate ipsum. Proin metus ex, lobortis nec ornare eget, bibendum ut sapien. Aliquam in dolor lobortis, aliquam tellus a, congue augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+El proyecto tiene la siguiente estructura de archivos:
 
-Aenean pretium purus augue, ut bibendum erat convallis quis. Cras condimentum quis velit ac mollis. Suspendisse non purus fringilla, venenatis nisl porta, finibus odio. Curabitur aliquet metus faucibus libero interdum euismod. Morbi sed magna nisl. Morbi odio nibh, facilisis vel sapien eu, tempus tincidunt erat. Nullam erat velit, sagittis at purus quis, tristique scelerisque tortor. Pellentesque lacinia tortor id est aliquam viverra. Vestibulum et diam ac ipsum mollis fringilla.
+```
+.
+├── modelos
+│   └── orca-mini-3b.ggmlv3.q4_0.bin
+├── static
+│   ├── img
+│   │   ├── (archivos de imágenes)
+│   │   └── favicon
+│   │       └── (archivos de favicon)
+│   └── script.js
+├── templates
+│   └── index.html
+├── main.py
+└── README.md
+```
+
+## Cómo Funciona
+
+La aplicación utiliza la síntesis de voz y el reconocimiento de voz del navegador para interactuar con el usuario. Cuando el usuario habla, su voz se transcribe a texto y se envía a un modelo de IA en el servidor. El modelo de IA genera una respuesta, que luego se convierte en voz y se reproduce para el usuario.
+
+## Código
+
+El proyecto es una aplicación Flask. El archivo `main.py` contiene el servidor Flask y la lógica de la aplicación. El archivo `script.js` contiene el código JavaScript para la interacción del usuario en el front-end. El archivo `index.html` es la plantilla HTML para la interfaz de usuario.
+
+## Uso
+
+Para usar la aplicación, los usuarios simplemente necesitan visitar la URL de la aplicación en su navegador. Actualmente solo pueden interactuar con el chatbot utilizando el reconocimiento de voz.
+
+## Despliegue
+
+Para finalizar el desarrollo y deploy de la aplicación use Replit y está disponible 24/7 en la siguiente URL: https://audio-gpt-juanroccia.replit.app/
+
+## Estado Actual y Futuro del Proyecto
+
+Aunque el proyecto ha avanzado mucho y ahora utiliza un modelo de IA más grande, todavía se encuentra en una etapa inicial. Puede haber fallas, demoras, etc. Sin embargo, el proyecto está en continuo desarrollo y habrá nuevas versiones con mejoras e implementaciones en el futuro.
