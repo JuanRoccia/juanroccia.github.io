@@ -9,6 +9,7 @@ import CallToAction from '../components/CallToAction.astro';
 import Grid from '../components/Grid.astro';
 import Hero from '../components/Hero.astro';
 import Icon from '../components/Icon.astro';
+import DynamicTagline from '../components/DynamicTagline.astro';
 import Pill from '../components/Pill.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
 
@@ -68,9 +69,11 @@ const fundingOptions = [
 			<header class="hero">
 				<Hero
 					title="Hola, mi nombre es Juan Roccia"
-					tagline="Soy Tremendo Programador, me apasiona el Desarrollo Web y la Inteligencia Artificial."
 					align="start"
 				>
+					<div>
+						<DynamicTagline><DynamicTagline />
+					</div>
 					<div class="roles">
 						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
 						<Pill><Icon icon="microphone-stage" size="1.33em" /> Producer</Pill>
