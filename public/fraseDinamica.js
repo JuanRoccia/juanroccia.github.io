@@ -22,8 +22,10 @@ const frases = [
 ];
 
 document.addEventListener("DOMContentLoaded", function() {
-    const fraseAleatoria = frases[Math.floor(Math.random() * frases.length)];
-    const fraseCompleta = `${fraseAleatoria} Me apasiona el Desarrollo Web y la Inteligencia Artificial.`;
-    const elementoFrase = document.getElementById("frase-dinamica");
-    elementoFrase.textContent = fraseCompleta;
+    setTimeout(() => {
+        const fraseAleatoria = frases[Math.floor(Math.random() * frases.length)];
+        const fraseCompleta = `${fraseAleatoria} Me apasiona el Desarrollo Web y la Inteligencia Artificial.`;
+        const elementoFrase = document.getElementById("frase-dinamica");
+        elementoFrase.textContent = fraseCompleta;
+    }, 500); // Retrasa la ejecución en 500 milisegundos
 });
