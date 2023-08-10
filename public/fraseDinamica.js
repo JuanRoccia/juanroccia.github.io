@@ -27,5 +27,5 @@ document.addEventListener("DOMContentLoaded", function() {
         const fraseCompleta = `${fraseAleatoria} Me apasiona el Desarrollo Web y la Inteligencia Artificial.`;
         const elementoFrase = document.getElementById("frase-dinamica");
         elementoFrase.textContent = fraseCompleta;
-    }, 500); // Retrasa la ejecución en 500 milisegundos
+    }, 500);
 });
