@@ -34,7 +34,10 @@ Imaginamos un futuro en el que ProyectoUPSO se convierta en una plataforma para 
 
 #### Participa en el proyecto
 
-- ¿Sos estudiante de la UPSO y quieres contribuir al proyecto? Aca tenes un [mini tutorial](https://docs.google.com/document/d/1wt4_zKksf4c75TeDGufU3Tz2oBebgVwWhnay7TsPJfg/edit?usp=sharing) para empezar.
-- ¿Queres ver el proyecto en acción? Accede a través de este [link](https://horariosupso.netlify.app/).
+- ¿Queres contribuir al proyecto? Aca tenes un [mini tutorial](https://docs.google.com/document/d/1wt4_zKksf4c75TeDGufU3Tz2oBebgVwWhnay7TsPJfg/edit?usp=sharing) para empezar.
+- ¿Queres ver el proyecto en acción? Accede a través de este [link](https://proyectoupsodjango.juanroccia.repl.co/).
+- **Django en Replit:** [Visitar Proyecto](https://proyecto.ups0.repl.co)
+- **Netlify (Estático):** [Ver Sitio](https://proyectoupso.netlify.app/)
+- **React en Vercel:** [Próximamente](#)
 
 *Tecnicatura Universitaria en Tecnologías de la Programación.

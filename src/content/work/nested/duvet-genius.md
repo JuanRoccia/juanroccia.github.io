@@ -49,7 +49,13 @@ Para usar la aplicación, los usuarios simplemente necesitan visitar la URL de l
 
 ## Despliegue
 
-Para finalizar el desarrollo y deploy de la aplicación use Replit y está disponible 24/7 en la siguiente URL: https://audio-gpt-juanroccia.replit.app/
+Para finalizar el desarrollo y deploy de la aplicación use Replit y esta disponible en la siguiente URL del Deployment: 
+
+https://audio-gpt-juanroccia.replit.app/ 
+
+Y en el caso de quedarse sin fondos también esta disponible la URL del Webview: 
+
+https://audiogpt.juanroccia.repl.co/
 
 ## Estado Actual y Futuro del Proyecto
 

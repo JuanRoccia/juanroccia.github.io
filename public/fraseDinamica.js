@@ -15,6 +15,7 @@ const frases = [
     "Soy el Maradona del frontend, el Gardel del backend.",
     "En la cancha del desarrollo, soy el 10 siempre.",
     "Soy el Messi del frontend, el Dibu del backend.",
+    "No solo escribo código, escribo poesía en Python.",
     "Soy Tita Merello en el frontend, y el Bambino Veira en el backend.",
     "Soy Trezeguet en el frontend, y el Pipo Gorosito en el backend.",
     "Soy el Charly Garcia del frontend, y el Spinetta del backend.",

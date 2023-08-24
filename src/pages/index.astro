@@ -12,6 +12,7 @@ import Icon from '../components/Icon.astro';
 import DynamicTagline from '../components/DynamicTagline.astro';
 import Pill from '../components/Pill.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
+import CopyToClipboard from '../components/CopyToClipboard.astro';
 
 // Page section components
 import ContactCTA from '../components/ContactCTA.astro';
@@ -28,19 +29,11 @@ const fundingOptions = [
 		name: 'CVU',
 		value: '0000003100009764710288',
 		isLink: false,
-		onClick: () => {
-			navigator.clipboard.writeText('0000003100009764710288');
-			alert('CVU copied to clipboard');
-		},
 	},
 	{
 		name: 'Alias',
-		value: 'zinc.egresa.beige.mp',
+		value: 'dame.el.dinero.perra',
 		isLink: false,
-		onClick: () => {
-			navigator.clipboard.writeText('zinc.egresa.beige.mp');
-			alert('Alias copied to clipboard');
-		},
 	},
 	{
 		name: 'PayPal',
@@ -138,20 +131,26 @@ const fundingOptions = [
 							))
 						}
 					</Grid> -->
-					<!-- <Grid variant="small"> 
+
+					<!-- <CopyToClipboard><CopyToClipboard /> -->
+					<!-- Asegúrate de que el script que contiene la función copyToClipboard esté importado en tu componente o página -->
+					<script type="module" src="/copyClipboard.js"></script>
+
+					<Grid variant="small">
 						{
 							fundingOptions.map((option) => (
 								option.isLink
-									? <li class="mention-card">
-											<a href={option.value}>{option.name}</a>
+									? 	<li class="mention-card">
+											<a href={option.value} class="funding-link">{option.name}</a>
 										</li>
-									: <li class="mention-card">
-											<button onClick={option.onClick}>{option.name}</button>
+									: 	<li class="mention-card">
+											<button class="funding-button" data-copy-value={option.value}>{option.name}</button>
 										</li>
 							))
 						}
-					</Grid> -->
-					<Grid variant="small"> 
+					</Grid>
+
+					<!-- <Grid variant="small"> 
 						{
 							fundingOptions.map((option) => (
 								option.isLink
@@ -163,7 +162,8 @@ const fundingOptions = [
 										</li>
 							))
 						}
-					</Grid>
+					</Grid> -->
+
 				</div>
 			</section>
 		</main>
@@ -226,7 +226,6 @@ const fundingOptions = [
 
 	.with-background::before {
 		--hero-bg: var(--bg-image-subtle-2);
-
 		content: '';
 		position: absolute;
 		pointer-events: none;
