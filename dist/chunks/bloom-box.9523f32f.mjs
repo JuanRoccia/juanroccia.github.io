@@ -1,0 +1,12 @@
+const id = "bloom-box.md";
+						const collection = "work";
+						const slug = "bloom-box";
+						const body = "\nEstoy trabajando en un emocionante proyecto que busca revolucionar la forma en que los músicos y productores adquieren y utilizan software VST, plugins e instrumentos virtuales. Esta plataforma e-commerce no solo servirá como un mercado para adquirir estas herramientas, sino que también será un espacio donde yo mismo desarrollaré y cargaré plugins e instrumentos virtuales únicos y de alta calidad.\n\nPara el desarrollo de la plataforma, estoy considerando tecnologías como Django, Astro o React, aprovechando frameworks de diseño como Bootstrap o Tailwind para garantizar una experiencia de usuario fluida y atractiva. En cuanto al desarrollo de los plugins, estoy investigando y experimentando con herramientas como JUCE para garantizar la mejor calidad y compatibilidad en la industria musical.\n\nEl proceso de desarrollo ha sido un viaje de aprendizaje y descubrimiento en el cual aún me encutro investigando en áreas como la generación de música mediante IA. Cada paso me acerca más a la realización de una plataforma que no solo será útil para los músicos y productores, sino que también reflejará mi pasión y compromiso con la innovación en el mundo de la música digital.\n\nMantente atento para más actualizaciones y el lanzamiento oficial de la plataforma. ¡El futuro de la música digital está a la vuelta de la esquina!";
+						const data = {title:"VST Plugins",publishDate:new Date(1575158400000),img:"/assets/stock-2.jpg",img_alt:"A bright pink sheet of paper used to wrap flowers curves in front of rich blue background",description:"En desarrollo: Una plataforma dedicada al desarrollo e investigacion de software VST, plugins e instrumentos virtuales.\n",tags:["Dev","E-commerce","Music"]};
+						const _internal = {
+							type: 'content',
+							filePath: "C:/Users/juanm/Desarrollo Web/GitHubPages-BranchWeb-LinkTree/juanroccia.github.io/src/content/work/bloom-box.md",
+							rawData: "\ntitle: VST Plugins\npublishDate: 2019-12-01 00:00:00\nimg: /assets/stock-2.jpg\nimg_alt: A bright pink sheet of paper used to wrap flowers curves in front of rich blue background\ndescription: |\n  En desarrollo: Una plataforma dedicada al desarrollo e investigacion de software VST, plugins e instrumentos virtuales.\ntags:\n  - Dev\n  - E-commerce\n  - Music",
+						};
+
+export { _internal, body, collection, data, id, slug };
