@@ -5,4 +5,23 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 <BaseLayout title="Not Found" description="404 Error — this page was not found">
 	<Hero title="Page Not Found" tagline="Not found" />
+	<!-- centrar la imagen -->
+
+	<img 
+		width="353" 
+		height="273" 
+		src="/assets/se-perdio.png" 
+		alt=""
+	>
+	<h1>Y se perdio, todo se perdio</h1>
+	<h2>El sitio está en mantenimiento</h2>
+    <p>Tomatelas.</p>
 </BaseLayout>
+
+<!-- Estilos para centrar la imagen -->
+<style>
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+</style>
