@@ -5,18 +5,23 @@ import Icon from './Icon.astro';
 <section class="box skills">
 	<div class="stack gap-2 lg:gap-4">
 		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Full Stack</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+		<h2>Full Stack Development</h2>
+		<p>Desarrollo de aplicaciones web desde el frontend hasta el backend, utilizando las tecnologías más modernas para crear soluciones digitales efectivas.</p>
 	</div>
 	<div class="stack gap-2 lg:gap-4">
 		<Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Industry Leader</h2>
-		<p>Neque viverra justo nec ultrices dui. Est ultricies integer quis auctor elit.</p>
+		<h2>Sistemas de Automatización</h2>
+		<p>Diseño e implementación de sistemas automatizados que optimizan procesos y aumentan la eficiencia operativa mediante scripts y herramientas especializadas.</p>
 	</div>
 	<div class="stack gap-2 lg:gap-4">
 		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Strategy-Minded</h2>
-		<p>Urna porttitor rhoncus dolor purus non enim praesent ornare.</p>
+		<h2>Machine Learning & AI</h2>
+		<p>Creación de soluciones inteligentes utilizando aprendizaje automático e inteligencia artificial para generación de contenido y análisis predictivo.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="graph" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Trading Algorítmico</h2>
+		<p>Desarrollo de algoritmos para trading financiero basados en análisis estadístico y técnicas de machine learning para identificar oportunidades de mercado.</p>
 	</div>
 </section>
 
@@ -51,12 +56,18 @@ import Icon from './Icon.astro';
 
 		.skills {
 			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			gap: 5rem;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 4rem;
 		}
 
 		.skills h2 {
 			font-size: var(--text-2xl);
+		}
+	}
+
+	@media (min-width: 80em) {
+		.skills {
+			grid-template-columns: repeat(4, 1fr);
 		}
 	}
 </style>

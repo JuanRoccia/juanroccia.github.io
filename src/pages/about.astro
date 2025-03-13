@@ -1,0 +1,166 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="About | Juan Roccia" description="About Juan Roccia - Developer, AI Specialist, and Automation Engineer">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="About"
+				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/at-work.jpg"
+					alt="Juan Roccia at work with a colleague"
+				/>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Background</h2>
+				<div class="content">
+					<p>
+						I'm a versatile professional in the tech industry with expertise across web development, automation systems, 
+						and artificial intelligence. My passion for technology drives me to continually explore emerging fields and
+						apply cutting-edge solutions to practical problems.
+					</p>
+					<p>
+						With a foundation in web development, I've expanded my skill set to embrace modern technologies that are
+						transforming our digital landscape. I specialize in creating efficient, scalable systems that leverage the 
+						power of automation and AI to deliver exceptional value.
+					</p>
+					<p>
+						I take pride in my ability to bridge the gap between technical complexity and practical application, 
+						making advanced technologies accessible and beneficial for businesses and individuals alike.
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Education</h2>
+				<div class="content">
+					<h3>Formal Education</h3>
+					<ul>
+						<li>Tecnicatura Universitaria en Tecnologías de Programación - UPSO</li>
+						<li>Harvard CS50's Introduction to Computer Science</li>
+					</ul>
+					<p>
+						My formal education has provided me with a solid foundation in computer science principles and
+						software development methodologies, which I continually enhance through self-directed learning
+						and professional development.
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Skills</h2>
+				<div class="content">
+					<h3>Web Development</h3>
+					<p>
+						Expert in HTML, CSS, JavaScript, PHP, and modern frameworks like React, Astro, and 
+						server-side technologies. I create responsive, accessible, and performant websites 
+						with clean, maintainable code.
+					</p>
+					
+					<h3>Automation Systems</h3>
+					<p>
+						Specialized in designing and implementing automation solutions that streamline 
+						workflows and increase productivity. My expertise includes process automation, 
+						scripting, and integration of disparate systems to create cohesive, efficient
+						operational environments.
+					</p>
+					
+					<h3>Artificial Intelligence & Machine Learning</h3>
+					<p>
+						Proficient in developing AI solutions for content generation, data analysis, and 
+						predictive modeling. I work with various machine learning libraries and frameworks
+						to create intelligent systems that can learn from data and make informed decisions.
+					</p>
+					
+					<h3>Algorithmic Trading</h3>
+					<p>
+						Currently developing trading algorithms that leverage statistical analysis and
+						machine learning to identify market opportunities. This ongoing project combines
+						my interests in finance, mathematics, and programming to create data-driven
+						trading strategies.
+					</p>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	.content h3 {
+		color: var(--gray-0);
+		font-size: var(--text-lg);
+		margin-top: 1.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.content ul {
+		list-style: disc;
+		padding-left: 1.5rem;
+		margin-bottom: 1rem;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
