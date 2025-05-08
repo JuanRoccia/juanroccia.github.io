@@ -1,5 +1,11 @@
 const frases = [
-    "Acá el que la rompe programando, ¡ese soy yo!",
+    "¿Tu negocio anda más lento que Internet Explorer? Dejá de renegar, che, contactame.", 
+    "Con mis soluciones web, tu empresa va como piña. Desde páginas que te dejan pipón hasta automatizaciones que laburan mientras vos tomás mate.",
+    "Hacemos códigos que funcionan de una, sin vueltas ni berretines.",
+    "Si tu competencia te está pasando el trapo, es hora de ponerse las pilas.",
+    "Mandame MP y en dos patadas te armo algo que rompe los ojos.",
+    "¡La tecnología al servicio del laburo, papá!",
+    "Acá el que la rompe programando",
     "Cuando de código se trata, soy el Messi del teclado.",
     "En el mundo del desarrollo, soy el que pone la magia.",
     "Si buscas al crack del código, ya lo encontraste.",
