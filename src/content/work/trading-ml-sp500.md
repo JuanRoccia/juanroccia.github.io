@@ -1,7 +1,7 @@
 ---
 title: "Trading Algorítmico"
 publishDate: 2025-07-14 15:30:00
-img: /assets/stock-8.jpg
+img: /assets/stock-11.jpg
 img_alt: Estrategia de Trading Algorítmica
 description: "Estrategia de Trading Algorítmica con Machine Learning. Proyecto final de la Tecnicatura en Programación: análisis y optimización de portafolios usando clustering y datos históricos del S&P500."
 image: "/assets/newplot.png"
