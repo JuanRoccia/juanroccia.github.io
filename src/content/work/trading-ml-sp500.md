@@ -1,9 +1,16 @@
 ---
-title: "Estrategia de Trading Algorítmica con Machine Learning sobre el S&P500"
-date: 2025-07-14
-description: "Proyecto final de la Tecnicatura en Programación: análisis y optimización de portafolios usando clustering y datos históricos del S&P500."
+title: "Trading Algorítmico"
+publishDate: 2025-07-14 15:30:00
+img: /assets/stock-8.jpg
+img_alt: Estrategia de Trading Algorítmica
+description: "Estrategia de Trading Algorítmica con Machine Learning. Proyecto final de la Tecnicatura en Programación: análisis y optimización de portafolios usando clustering y datos históricos del S&P500."
 image: "/assets/newplot.png"
 notebook: "/assets/Proyecto_Final_ML&BD.ipynb"
+tags:
+  - Trading
+  - Machine Learning
+  - Big Data
+  - S&P500
 ---
 
 ## Resumen
@@ -40,8 +47,8 @@ El portafolio optimizado logró resultados competitivos frente al S&P500, mostra
 
 ## Acceso al notebook completo
 
-[Descargar notebook (Jupyter)](/assets/Proyecto_Final_ML&BD.ipynb)
+[Solicitar acceso al notebook (Jupyter)](https://jupyter.org/try-jupyter/notebooks/index.html?path=notebooks%2FProyecto_Final_ML%26BD.ipynb)
 
 ---
 
-> Proyecto realizado en 2025 para la Tecnicatura en Programación, orientado a la aplicación práctica de Machine Learning y Big Data en finanzas.
+> Proyecto realizado para la Tecnicatura en Programación, orientado a la aplicación práctica de Machine Learning y Big Data en finanzas. Estrategia de Trading Algorítmica con Machine Learning sobre el S&P500
