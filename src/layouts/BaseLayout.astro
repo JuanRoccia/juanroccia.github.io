@@ -6,7 +6,6 @@
 import MainHead from '../components/MainHead.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
-
 interface Props {
 	title?: string | undefined;
 	description?: string | undefined;
@@ -109,5 +108,64 @@ const { title, description } = Astro.props;
 				}
 			}
 		</style>
+		<script>
+			// function applyTheme() {
+			// 	const theme = localStorage.getItem('theme');
+			// 	const isDark = theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches);
+			// 	document.documentElement.classList[isDark ? 'add' : 'remove']('theme-dark');
+			// }
+
+			// applyTheme();
+			// window.addEventListener('astro:after-swap', applyTheme);
+
+			// Permite alternar el tema desde el botón con id="theme-toggle"
+			// const themeToggleBtn = document.getElementById('theme-toggle');
+			// if (themeToggleBtn) {
+			// 	themeToggleBtn.addEventListener('click', function() {
+			// 		const isDark = document.documentElement.classList.toggle('theme-dark');
+			// 		localStorage.setItem('theme', isDark ? 'dark' : 'light');
+			// 	});
+			// }
+
+			// Refuerza la clase si se pierde por error
+			// const observer = new MutationObserver(applyTheme);
+			// observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+		</script>
+		<script>
+			// function applyTheme() {
+			// 	const theme = localStorage.getItem('theme');
+			// 	const isDark = theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches);
+			// 	if (isDark) {
+			// 		document.documentElement.classList.add('theme-dark');
+			// 	} else {
+			// 		document.documentElement.classList.remove('theme-dark');
+			// 	}
+			// }
+			// // Aplica el tema al cargar y tras cada transición SPA
+			// applyTheme();
+			// window.addEventListener('astro:after-swap', applyTheme);
+
+			// // Refuerza la clase si se pierde por error
+			// const observer = new MutationObserver(() => {
+			// 	const theme = localStorage.getItem('theme');
+			// 	const isDark = theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches);
+			// 	if (isDark && !document.documentElement.classList.contains('theme-dark')) {
+			// 		document.documentElement.classList.add('theme-dark');
+			// 	}
+			// 	if (!isDark && document.documentElement.classList.contains('theme-dark')) {
+			// 		document.documentElement.classList.remove('theme-dark');
+			// 	}
+			// });
+			// observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+		</script>
+		<script>
+			function applyTheme() {
+				const theme = localStorage.getItem('theme');
+				const isDark = theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches);
+				document.documentElement.classList[isDark ? 'add' : 'remove']('theme-dark');
+			}
+			applyTheme();
+			window.addEventListener('astro:after-swap', applyTheme);
+		</script>
 	</body>
 </html>

@@ -24,6 +24,7 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
+const { slug, data } = Astro.props.entry;
 const { Content } = await entry.render();
 ---
 
@@ -33,7 +34,7 @@ const { Content } = await entry.render();
 			<header>
 				<div class="wrapper stack gap-2">
 					<a class="back-link" href="/work/"><Icon icon="arrow-left" /> Work</a>
-					<Hero title={entry.data.title} align="start">
+					<Hero title={entry.data.title} align="start" >	
 						<div class="details">
 							<div class="tags">
 								{entry.data.tags.map((t) => <Pill>{t}</Pill>)}
@@ -44,7 +45,7 @@ const { Content } = await entry.render();
 				</div>
 			</header>
 			<main class="wrapper">
-				<div class="stack gap-10 content">
+				<div class="stack gap-10 content" transition:name={`img-${slug}`}>
 					{entry.data.img && <img src={entry.data.img} alt={entry.data.img_alt || ''} />}
 					<div class="content">
 						<Content />

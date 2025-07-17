@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-
+import { ClientRouter } from 'astro:transitions';
 interface Props {
 	title?: string | undefined;
 	description?: string | undefined;
@@ -11,6 +11,10 @@ const {
 	description = 'The personal site of Juan Roccia',
 } = Astro.props;
 ---
+<!-- Sistema de View Transitions Astro -->
+<!-- <meta name="astro-view-transitions-enabled" content="true" />
+<meta name="astro-view-transitions-fallback" content="slide" /> -->
+<ClientRouter />
 
 <meta charset="UTF-8" />
 <meta name="description" property="og:description" content={description} />

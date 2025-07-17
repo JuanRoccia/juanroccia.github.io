@@ -3,7 +3,7 @@ import Icon from './Icon.astro';
 ---
 
 <theme-toggle>
-	<button>
+	<button id="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
 		<span class="sr-only">Dark theme</span>
 		<span class="icon light"><Icon icon="sun" /></span>
 		<span class="icon dark"><Icon icon="moon-stars" /></span>
@@ -76,13 +76,16 @@ import Icon from './Icon.astro';
 			const setTheme = (dark: boolean) => {
 				document.documentElement.classList[dark ? 'add' : 'remove']('theme-dark');
 				button.setAttribute('aria-pressed', String(dark));
+				localStorage.setItem('theme', dark ? 'dark' : 'light');
 			};
 
 			// Toggle the theme when a user clicks the button.
 			button.addEventListener('click', () => setTheme(!this.isDark()));
 
-			// Initialize button state to reflect current theme.
-			setTheme(this.isDark());
+			// Initialize button state to reflect localStorage preference
+			const themePref = localStorage.getItem('theme');
+			const dark = themePref === 'dark' || (!themePref && window.matchMedia('(prefers-color-scheme: dark)').matches);
+			setTheme(dark);
 		}
 
 		isDark() {

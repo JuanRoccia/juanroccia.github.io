@@ -47,7 +47,9 @@ El portafolio optimizado logró resultados competitivos frente al S&P500, mostra
 
 ## Acceso al notebook completo
 
-[Solicitar acceso al notebook (Jupyter)](https://jupyter.org/try-jupyter/notebooks/index.html?path=notebooks%2FProyecto_Final_ML%26BD.ipynb)
+[Visualizar o Descargar notebook (Jupyter)](https://nbviewer.org/github/JuanRoccia/MachineLearningUPSO/blob/main/Proyecto%20Final/Proyecto_Final_ML%26BD.ipynb)
+
+[Repo del proyecto completo en GitHub](https://github.com/JuanRoccia/MachineLearningUPSO/blob/main/Proyecto%20Final/Informe_Proyecto_Final_ML%26BD.pdf)
 
 ---
 
